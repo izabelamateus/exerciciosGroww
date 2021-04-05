@@ -13,9 +13,22 @@ O lado A sempre deverá ser o maior de todos(Criar um mecânismo para tratar iss
 Caso sejam fornecidos valores negativos, retornar erro para o usuário.
 
 */
-function calculaMédia() {
+var a = 0, b = 0, c = 0
+function calculaTriangulo(a, b, c) {
+    if ((a < b) || (a < c) || (a <= 0) || (b <= 0) || (c <= 0)){
+        alert("Erro")
+    }else if(a >= b + c){
+        console.log("Não existe o triângulo")
+    }else if (a**2 == b**2 + c**2){
+        console.log("É um triângulo retângulo")
+    }else if(a**2 > b**2 + c**2){
+        console.log("É um triângulo obtusângulo")
+    }else if(a**2 < b**2 + c**2){
+        console.log("É um triângulo acutângulo")
+    }
+   }
+    
 
-}
 
 
 
@@ -32,9 +45,30 @@ Uma empresa quer aumentar o salário dos funcionários dada a seguinte tábela
 
 Crie um código que recebe o salario do funcionário(apenas numérico) e retorne o salario atual, a porcentagem de correção e o valor corrigido
 */
+var salario
+function corrigiSalario(salario) {
+    var porcentagem = 0, valorCorrigido = 0
 
-function corrigiSalario() {
-
+    if(salario <= 400){
+        porcentagem = "15%"
+        valorCorrigido = (salario * 0.15) + salario
+    }else if(salario > 400 && salario <= 700){
+        porcentagem = "12%"
+        valorCorrigido = (salario * 0.12) + salario
+    }else if(salario > 700 && salario <= 1000){
+        porcentagem = "10%"
+        valorCorrigido = (salario * 0.1) + salario
+    }else if(salario > 1000 && salario <= 2000){
+        porcentagem = "7%"
+        valorCorrigido = (salario * 0.07) + salario
+    }else if(salario > 2000 && salario <= 3500){
+        porcentagem = "4%"
+        valorCorrigido = (salario * 0.04) + salario
+    }else{
+        porcentagem = "0%"
+        valorCorrigido = salario
+    }
+    console.log("O seu salário atual é R$" + salario + ". A porcentagem de correção é R$ " + porcentagem + ". O valor corrigido é R$ " + valorCorrigido + ".")
 }
 
 
