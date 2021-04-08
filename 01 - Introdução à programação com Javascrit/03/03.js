@@ -1,93 +1,57 @@
-/* Função Subprograma
-nome
-parametros
-instruções
+/* RESPOSTA AQUI 👇 */
 
-function [nome](params){
-    instruções
-}
+/*
+Questão 01
+
+Crie um programa que funciona como um calculadora. O usuário entrara com
+3 inputs(Tipo de operação,número 01, número 02)
+
+O seu programa deve receber o tipo de operação entrada pelo usuário e garantir que
+os dois números entrados serão calculados de acordo.
+
+Exemplo:
+Chamada : funçãoCalculadora("Multiplicação", 2, 2)
+Saída : "A calculadora executou a operação de Multiplicação e retornou o valor 4"
+
+Será necessário criar pelo menos as quatro operações básicas da matemática(
+    multiplicação,
+    divisão,
+    subtração e
+    adição
+)
+
+Pontuação bônus: Criar mais operações matemáticas
+Pontuação bônus: Criar uma função separada para cada operação matemática.
+
 */
 
-var notaP1 = 0
-var notaP2 = 0
-var notaP3 = 0
-var notaP4 = 0
-var materia = ""
+function functionCalculadora() {
 
-function retonaResultado(nota) {
-    var media = 7 //Media da turma igual a nota 10
-    var statusAluno = "";
-    if (nota >= media) {
-        statusAluno = "Aprovado"
-    } else {
-        statusAluno = "Reprovado"
-    }
-    return statusAluno
-}
-
-function calculaNotaSwitch(notaP1, notaP2, notaP3, notaP4, materia) {
-    var CD = 4 // Coeficiênte de Divisão;
-
-    switch (materia) {
-        case "Portugues":
-            var soma = notaP1 + notaP4
-            var resultado = soma / CD
-            var resultadoFinalAluno = retonaResultado(resultado)
-
-            break;
-        case "Matematica":
-            var soma = notaP1 + notaP2 + notaP3 + notaP4
-            var resultado = soma / CD
-            var resultadoFinalAluno = retonaResultado(resultado)
-
-            break;
-        case "Geografia":
-            var soma = notaP1 + notaP2 + notaP3 + notaP4 * 1.5
-            var resultado = soma / CD
-            var resultadoFinalAluno = retonaResultado(resultado)
-
-            break;
-    }
-    return resultadoFinalAluno
-}
-
-/* SOLID */
-
-/* Calcular área da coroa de um círculo(r1 > r2 e pi 3,14) */
-function numeroAoQuadrado(numero) {
-    return numero ** 2
-}
-
-function calculaAreaCirculo(r) {
-    var pi = 3.14
-    var area = numeroAoQuadrado(r) * pi
-    return area
 }
 
 
-function informaCoroaCirculo(r1, r2) {
+/* Questão 02 (Valendo uma pontuação maior)
 
-    if (r1 < r2) {
-        return "Raio do círculo R1 tem que ser maior que o R2"
-    }
-    var areaR1 = calculaAreaCirculo(r1)
-    var areaR2 = calculaAreaCirculo(r2)
 
-    return areaR1 - areaR2
-}
-function retornaGrao(grao) {
-    var grao = 0
-    for (var i = 0; i < 9; i++) {
-        grao = grao + i
-        // more statements
-    }
-    return grao
-    /* for (var i = 1; i <= 64; i++) {
-        if (i == 1) {
-            grao = 1
-        } else {
-            grao = grao * 2
-        }
-        console.log(i)
-    } */
+Questão OBI(Olimpíada Brasileira de Matemática - 2012, Fase 2, Nível Junior)
+
+João Deseja fazer bolos para seus amigos usando uma receita que indica que devem ser
+usadas 2 xícaras de farinha de trigo, 3 ovos e 5 colheres de sopa de leite. Em casa
+ele tem A xícaras de trigo, B ovos e C colheres de sopa de leite. João não tem muita
+prática com a cozinha e portanto ele só se arriscará a fazer medidas exatas da receita
+de bolo (por exemplo, se ele tiver material suficiente para
+fazer mais do que 2 e menos do que 3 bolos, ele far´a somente 2 bolos). Sabendo disso,
+ajude João escrevendo uma função que determine qual a quantidade máxima de bolos que 
+ele consegue fazer
+Entrada: Os Parâmetros de entrada da função são três números Inteiros A, B e C, indicando
+respectivamente o número de xícaras de farinha de trigo, o núimero de ovos e o número de 
+colheres de sopa de leite que João tem em Casa
+
+Saída: Retornar a quantidade máxima de bolos
+entrada : 4,6,10 saída: 2
+ebtrada 4, 6, 9 saída : 1
+*/
+
+function calculaBolo() {
+
 }
