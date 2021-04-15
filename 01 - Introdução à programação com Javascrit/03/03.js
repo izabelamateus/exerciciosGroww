@@ -1,7 +1,60 @@
 /* RESPOSTA AQUI 👇 */
 
+/* Questão 01
+Cria uma função que leia o mês do aniversário da pessoa(01 ~ 12) e retorne seu signo:
+01 - Capricornio
+02 - Aquario
+03 - Peixes
+04 - Aries
+05 - Touro
+06 - Gêmeos
+07 - Cancer
+08 - Leão
+09 - Virgem
+10 - Libra
+11 - Escorpião
+12 - Sagitário
+
+*/
+
+function leSigno(){
+
+}
+
+/* Questão 02
+
+Cria uma função que leia dois números e retorne como resultado os seguintes valores:
+a) a multiplicação entre eles
+b) a divisão entre eles eles
+c) a soma entre eles
+d) a subtração entre eles
+*/
+function calculaTudo(){
+
+}
+/* Questão 03
+
+Carlos deseja fazer um omelete. Na receita que leu na internet, um omelete sempre deve levar
+2 ovos. 
+
+Cria uma função que retorne para Carlos quantos omeletes ele consegue fazer com a quantidade 
+de ovos que ele possue
+
+exemplo: 
+entrada 5 ovos
+saída 2 omeletes
+
+Entrada 4 ovos
+saída 2 omeletes
+
+*/
+
+function retornaOmelete(){
+
+    
+}
 /*
-Questão 01
+Questão 04
 
 Crie um programa que funciona como um calculadora. O usuário entrara com
 3 inputs(Tipo de operação,número 01, número 02)
