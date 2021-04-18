@@ -19,10 +19,14 @@ function calculaPares(lista){
     for(var i = 0; i < tamanhoLista; i++){
 
         //Nesse console.log(print) eu retorno cada número da lista 1 por vez
-        console.log(lista[i])
+        //console.log(lista[i])
 
         //Agora é a sua vez! Termine o meu código retornando apenas os número pares
         //Ps.: Antes de rodar o código, teste ele no seu browser para ver como ele se comporta
+        if(lista[i] % 2 == 0){
+            console.log(lista[i])
+        }
+
     }
 
 }
@@ -41,8 +45,22 @@ Saída: 15
 O programa deverá perguntar 5 vezes por uma entrada
 */
 
-function somaNumeros(){
+   
 
+function somaNumeros(){
+    var num1 = parseInt(prompt("Digite o primeiro número: "))
+    var num2 = parseInt(prompt("Digite o segundo número: "))
+    var num3 = parseInt(prompt("Digite o terceiro número: "))
+    var num4 = parseInt(prompt("Digite o quarto número: "))
+    var num5 = parseInt(prompt("Digite o quinto número: "))
+    var numeros = []
+    numeros.push(num1, num2, num3, num4, num5)
+    var resultado = 0
+    for(i = 0; i < numeros.length; i++){
+        resultado = resultado + numeros[i]
+        
+    }
+    console.log(resultado)
 }
 
 
@@ -54,7 +72,7 @@ Grêmense, Palmasco e Sants-fogo para um campeonato estilo ida e volta, onde os 
 se enfretam 2 vezes, e todos os times se enfretam. Ao final, o time com mais vitórias
 é consagrado o verdadeiro campeão do Brasil
 
-Crie uma função que leia um objeto com todos os conflitos e calculo o time campeão
+Crie uma função que leia um objeto com todos os conflitos e calcule o time campeão
 
 Ps.: Dei uma força para vocês
 */
@@ -110,7 +128,23 @@ function calculaCampeao(campeonamento) {
     for(var i = 1; i <= tamanhoObjeto; i++){
 
         //Retornando todos os resultados dos jogos do flarinthians
-        console.log(campeonamento.jogos[i].flarinthians)
+       // console.log(campeonamento.jogos[i].flarinthians)
+       
+       
+       /*var fla = []
+        fla.push(campeonamento.jogos[i].flarinthians)
+        for(i = 0; i < fla.length; i ++){
+            if(i == "vitoria"){
+                var num1 = 0
+                num1 = num1 + 1
+                console.log(num1)
+            }
+            
+        }
+       // if(campeonamento.jogos[i].flarinthians == "vitoria"){
+           
+        //}*/
+        
     }
 
 }

@@ -22,8 +22,24 @@ Exemplo:
         Trem Fantasma : Liberado
         Carrossel : Liberado
 */
-function calculaAltura(){
-
+var alt
+function calculaAltura(alt){
+    if ((alt > 1.30) && (alt <= 1.40)){
+        console.log("Montanha-Russa: Não pode entrar \nRoda Gigante: Não pode entrar \nCarinho bate-bate: Não pode entrar" +
+        "\nTrem Fantasma: Liberado \nCarrossel: Liberado")
+    }else if((alt > 1.40) && (alt <= 1.50)){
+        console.log("Montanha-Russa: Não pode entrar \nRoda Gigante: Não pode entrar \nCarinho bate-bate: Liberado" +
+        "\nTrem Fantasma: Liberado \nCarrossel: Liberado")
+    }else if((alt > 1.50) && (alt <= 1.60)){
+        console.log("Montanha-Russa: Não pode entrar \nRoda Gigante: Liberado \nCarinho bate-bate: Liberado" +
+        "\nTrem Fantasma: Liberado \nCarrossel: Liberado")
+    }else if(alt > 1.60){
+        console.log("Montanha-Russa: Liberado \nRoda Gigante: Liberado \nCarinho bate-bate: Liberado" +
+        "\nTrem Fantasma: Liberado \nCarrossel: Liberado") 
+    }else{
+        console.log("Montanha-Russa: Não pode entrar \nRoda Gigante: Não pode entrar \nCarinho bate-bate: Não pode entrar" +
+        "\nTrem Fantasma: Não pode entrar \nCarrossel: Liberado") 
+    }
 }
 
 /* Questão 02
@@ -37,9 +53,16 @@ Seu programa deverá receber três variaveis:
 Lembrando que um cliente paga meia se for maior de 65 anos, ou menor de 21 anos, ou é estudante.
 Tente prever também condições absurdas, como uma pessoa e 65 anos estudante.
 */
-
-function meiaCinema() {
-
+var idade
+var estudante
+var dia
+function meiaCinema(idade, estudante, dia) {
+    
+    if((idade > 65) || (idade < 21) || (estudante == true) || (dia == "Segunda-feira")){
+        console.log("Tem direito à meia entrada")
+    }else{
+        console.log("Não tem direito à meia entrada")
+    }
 }
 
 /* Questão 03
@@ -59,9 +82,14 @@ Saída: "Parabéns! Vocẽ entrou com o número 7 e o programa também gerou o n
 Para gerar um número aleatório entre 1 e 10, utilize o seguinte código
 Math.floor(Math.random() * 10) + 1
 */
-
-function adivinha(){
-
+var chute
+function adivinha(chute){
+    var numero = Math.floor(Math.random() * 10) + 1
+    if(chute == numero){
+        console.log("Parabéns! Você entrou com o número " + chute + " e o programa também gerou o número" + numero)
+    }else{
+        console.log("Que pena, você chutou " + chute + " mas o nosso número é " + numero)
+    }
 }
 
 /* Questão 04
@@ -80,9 +108,21 @@ Entrada: 30 e 50
 Saída : Os números não estão entre 40 e 60
 
 */
-
-function calculaMaior(){
-    
+var num1 
+var num2 
+function calculaMaior(num1, num2){
+    if((num1 >= 40) && (num1 <= 60) && (num2 >= 40) && (num2 <= 60)){
+        
+        if(num1 > num2){
+            console.log("Os números estão entre 40 e 60, e o maior deles é " + num1)
+        }else if(num1 < num2){
+            console.log("Os números estão entre 40 e 60, e o maior deles é " + num2)
+        }else if(num1 == num2){
+            console.log("Os números estão entre 40 e 60, e os dois números são iguais")
+        }    
+    }else{
+        console.log("Os números não estão entre 40 e 60")
+    }
 }
 
 /* Desafio
