@@ -149,7 +149,17 @@ cada hora com 60 minutos
 cada minuto com 60 segundos
 
 */
-
-function idadePlaneta() {
-
+var idade
+function idadePlaneta(idade) {
+    var idadeMercurio = (idade / 6220800).toFixed(1)
+    var idadeVenus = (idade / 18662400).toFixed(1)
+    var idadeTerra = (idade / 31104000).toFixed(1)
+    var idadeMarte = (idade / 58475520).toFixed(1)
+    var idadeJupiter = (idade / 368893440).toFixed(1)
+    var idadeSaturno = (idade / 915701760).toFixed(1)
+    var idadeUrano = (idade / 2612736000).toFixed(1)
+    var idadeNetuno = (idade / 5125628160).toFixed(1)
+    console.log("Idade em Mercúrio: " + idadeMercurio + " anos.\nIdade em Vênus: " + idadeVenus + " anos.\nIdade na Terra: " + idadeTerra + " anos."+
+    "\nIdade em Marte: " + idadeMarte + " anos.\nIdade em Júpiter: " + idadeJupiter + " anos.\nIdade em Saturno: " + idadeSaturno + " anos."+
+    "\nIdade em Urano: " + idadeUrano + " anos.\nIdade em Netuno: " + idadeNetuno + " anos.")  
 }
