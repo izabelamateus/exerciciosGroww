@@ -189,16 +189,24 @@ Saída: Retornar a quantidade máxima de bolos
 entrada : 4,6,10 saída: 2
 ebtrada 4, 6, 9 saída : 1
 */
-//var trigo
-//var ovos
-//var leite
-function calculaBolo(trigo, ovos, leite) {
-    /*var receitaTrigo = trigo / 2
-    var receitaOvos = ovos / 3
-    var receitaLeite = leite / 5
-    var totalTrigo = Math.floor(receitaTrigo)
-    var totalOvos = Math.floor(receitaOvos)
-    var totalLeite = Ma.floor(receitaLeite)*/
+var Atrigo
+var Bovos
+var Cleite
+function calculaBolo(Atrigo, Bovos, Cleite) {
+    var receitaTrigo = Math.floor(Atrigo / 2)
+    var receitaOvos = Math.floor(Bovos / 3)
+    var receitaLeite = Math.floor(Cleite / 5)
+    if((receitaTrigo == receitaOvos) && (receitaOvos == receitaLeite)){
+        console.log(receitaTrigo)
+    }else{
+        if((receitaTrigo <= receitaOvos) && (receitaTrigo <= receitaLeite)){
+            console.log(receitaTrigo)
+        }else if((receitaOvos <= receitaTrigo) && (receitaOvos <= receitaLeite)){
+            console.log(receitaOvos)
+        }else{
+            console.log(receitaLeite)
+        }
+    }
 
     
 }

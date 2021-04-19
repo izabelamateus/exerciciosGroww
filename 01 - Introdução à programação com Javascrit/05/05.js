@@ -130,7 +130,7 @@ function calculaCampeao(campeonamento) {
         //Retornando todos os resultados dos jogos do flarinthians
        // console.log(campeonamento.jogos[i].flarinthians)
        
-       
+       //Ainda não caonsegui fazer
        /*var fla = []
         fla.push(campeonamento.jogos[i].flarinthians)
         for(i = 0; i < fla.length; i ++){
