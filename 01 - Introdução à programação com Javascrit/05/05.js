@@ -125,26 +125,12 @@ function calculaCampeao(campeonamento) {
     
     var tamanhoObjeto = Object.keys(campeonamento.jogos).length // Retorna a quantidade de jogos no campeonato
     
-    for(var i = 1; i <= tamanhoObjeto; i++){
+   for(var i = 1; i <= tamanhoObjeto; i++){
 
-        //Retornando todos os resultados dos jogos do flarinthians
-       // console.log(campeonamento.jogos[i].flarinthians)
+       // Retornando todos os resultados dos jogos do flarinthians
+        console.log(campeonamento.jogos[i].flarinthians)
        
-       //Ainda não caonsegui fazer
-       /*var fla = []
-        fla.push(campeonamento.jogos[i].flarinthians)
-        for(i = 0; i < fla.length; i ++){
-            if(i == "vitoria"){
-                var num1 = 0
-                num1 = num1 + 1
-                console.log(num1)
-            }
-            
-        }
-       // if(campeonamento.jogos[i].flarinthians == "vitoria"){
-           
-        //}*/
-        
+              
     }
 
 }
