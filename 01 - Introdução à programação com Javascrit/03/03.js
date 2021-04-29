@@ -59,6 +59,9 @@ function leSigno(mes){
         default:
             console.log("Este número não corresponde a um mês!")      
     }
+
+function leSigno() {
+
 }
 
 /* Questão 02
@@ -77,6 +80,8 @@ function calculaTudo(n1, n2){
     var soma = n1 + n2
     var subtracao = n1 - n2
     console.log("Resultado \nMultiplicação: " + multiplicacao + "\nDivisão: " + divisao + "\nSoma: " + soma + "\nSubtração: " + subtracao)
+function calculaTudo() {
+
 }
 /* Questão 03
 
@@ -104,6 +109,11 @@ function retornaOmelete(ovos){
     console.log(totalOmeletes + " omeletes")
     }
     }
+
+function retornaOmelete() {
+
+
+}
 /*
 Questão 04
 
@@ -114,7 +124,7 @@ O seu programa deve receber o tipo de operação entrada pelo usuário e garanti
 os dois números entrados serão calculados de acordo.
 
 Exemplo:
-Chamada : funçãoCalculadora("Multiplicação", 2, 2)
+Chamada : functionCalculadora("Multiplicação", 2, 2)
 Saída : "A calculadora executou a operação de Multiplicação e retornou o valor 4"
 
 Será necessário criar pelo menos as quatro operações básicas da matemática(
@@ -165,13 +175,23 @@ function functionCalculadora(operacao, n1, n2) {
         var resultado = n1 + n2
         console.log("A calculadora executou a operação de Adição e retornou o valor " + resultado)
     }
+function functionCalculadora(operacao, valor01, valor02) {
+    var valor = 0
+    if (operacao == "Multi") {
+        valor = multipla(valor01, valor02)
+    }
+
+    return `A calculadora executou a operação ${operacao} e o valor deu : ${valor}`
 }
 
+function multipla(a, b) {
+    return a * b;
+}
 
 /* Questão 02 (Valendo uma pontuação maior)
 
 
-Questão OBI(Olimpíada Brasileira de Matemática - 2012, Fase 2, Nível Junior)
+Questão OBI(Olimpíada Brasileira de Informática - 2012, Fase 2, Nível Junior)
 
 João Deseja fazer bolos para seus amigos usando uma receita que indica que devem ser
 usadas 2 xícaras de farinha de trigo, 3 ovos e 5 colheres de sopa de leite. Em casa
@@ -187,7 +207,7 @@ colheres de sopa de leite que João tem em Casa
 
 Saída: Retornar a quantidade máxima de bolos
 entrada : 4,6,10 saída: 2
-ebtrada 4, 6, 9 saída : 1
+entrada : 4, 6, 9 saída : 1
 */
 var Atrigo
 var Bovos
@@ -209,4 +229,40 @@ function calculaBolo(Atrigo, Bovos, Cleite) {
     }
 
     
+function calculaBolo(far, ov, le) {
+    var qtFarinhaDeTrigo = far/2
+    var qtOvos = ov/3
+    var qtLeite = le/5
+    var mensagemBolo = ''
+
+    if (qtFarinhaDeTrigo === qtOvos && qtOvos === qtLeite) {
+
+        mensagemBolo = qtFarinhaDeTrigo
+
+    }else{
+
+        if(qtFarinhaDeTrigo < qtOvos && qtFarinhaDeTrigo < qtLeite){
+            mensagemBolo = qtFarinhaDeTrigo
+        }
+        if(qtLeite < qtFarinhaDeTrigo && qtLeite < qtOvos){
+            mensagemBolo = qtLeite
+        }
+        if(qtOvos < qtFarinhaDeTrigo && qtOvos < qtLeite){
+            mensagemBolo = qtOvos
+        }
+    }
+
+    console.log(`Total de bolos ${mensagemBolo}`)
+
+
+    /* for(var i = 1; i <= 10; i++){
+        if(farinhaDeTrigo%2 == 0 && ovos%3 == 0 && leite%5 == 0){
+            var bolo = 0 
+            bolo = bolo + 1   
+        }
+        
+    }   */
+
+
+
 }
