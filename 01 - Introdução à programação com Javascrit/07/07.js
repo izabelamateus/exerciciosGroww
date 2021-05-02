@@ -11,14 +11,21 @@ retorno: impar
 calculaPar([0,1,5,])
 retorno: par
 */
-var lista = []
+//var lista = [1, 3, 4, 1]
 function calculaPar(lista){
-    var tamanhoLista = lista.lenght;
-    for(var i = 0; i < tamanhoLista; i++){
-        var soma = 0
-        soma += lista[i]
-        console.log(soma)
+    var soma = 0
+    for(var i = 0; i < lista.length; i++){
+        soma = soma + lista[i]
+        
+
     }
+    if(soma % 2 === 0){
+        console.log("Par")
+    }else{
+        console.log("Ímpar")
+    }
+
+    
 }
 
 
