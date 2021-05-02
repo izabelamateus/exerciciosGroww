@@ -91,3 +91,12 @@ function retornaGrao(grao) {
         console.log(i)
     } */
 }
+
+
+
+/* 
+ - Facil de adicionar
+ - Facil de reutilizar
+ - SOLID
+    
+*/

@@ -87,3 +87,9 @@ Crie uma função que retorne 1, se entrar com 0 e retorne 0 se entrar com um.
 Não será permitido o uso de condicionais, como IF ou Switch
 
 */
+var num 
+function retorna(num){
+     
+     num === 0 ? console.log(1) : console.log(0);
+     
+}
