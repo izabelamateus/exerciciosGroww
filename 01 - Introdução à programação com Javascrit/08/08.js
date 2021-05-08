@@ -50,7 +50,7 @@ divisor(12) -> [1,2,3,4,6,12]
 */
 var num
 function retornaDivisores(num){
-    var lista = []
+    
     for(var i = 0; i <= num; i++){
         if(num % i === 0){
             console.log(i)
