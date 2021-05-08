@@ -48,3 +48,12 @@ Crie uma função que receba um número como parametro e retorne todos os seus d
 exemplo:
 divisor(12) -> [1,2,3,4,6,12]
 */
+var num
+function retornaDivisores(num){
+    var lista = []
+    for(var i = 0; i <= num; i++){
+        if(num % i === 0){
+            console.log(i)
+        }
+    }
+}
