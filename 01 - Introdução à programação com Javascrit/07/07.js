@@ -54,6 +54,16 @@ CalculeSomaQuadrado(3) -> 14
 Processamento: 1² + 2² + 3² = 14
 */
 
+var num
+function calculeSomaQuadrado(num){
+    var somaQuadrado = 0
+    for(var i = 0; i <= num; i++){
+        somaQuadrado = somaQuadrado + i ** 2     
+
+    }
+    console.log(somaQuadrado)
+}
+
 
 
 /* Questão 04
@@ -64,3 +74,9 @@ calculaSequencia([3,4,1,2]) ->2
 calculaSequencia([10,11,12,9,10]) -> 3
 (10->11->12)
 */
+/*lista = []
+function calculaSequencia(lista){
+    for(var i = 0; i <= lista.length; i ++){
+        var soma = 0
+    }
+}*/

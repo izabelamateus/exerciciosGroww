@@ -7,6 +7,14 @@ exemplo:
 adicionaNumero(3)
 1 + 2 + 3 = 6
 */
+var num 
+function adicionaNumero(num){
+    var soma = 0
+    for(var i = 0; i <= num; i++){
+        soma = soma + i
+    }
+    console.log(soma)
+}
 
 /* Questão 02 
 Cria uma função que checa que compara dois arrays e retorne todos os números que estão nos dois
@@ -17,6 +25,11 @@ funcaoComparaArray([2,5,6], [2,7,6]) -> [2,6]
 Não é necessário sempre receber um array na função, pode fazer com um array estatíco
 
 */
+/*var lista = []
+var lista2 = []
+function comparaArray(lista, lista2){
+    
+}*/
 
 /* Questão 03
 
