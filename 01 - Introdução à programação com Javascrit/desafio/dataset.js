@@ -253,3 +253,47 @@ var notasAlunosJSON = {
         }
     },
 }
+
+function desafio01(notasAlunosMatriz){
+    var nomeMediaAlunos = []
+    var mediasAlunos = []
+    var situacaoAluno = ""
+    var mediaRecuperacao = 0
+    for(var i = 0; i < notasAlunosMatriz.length; i++){
+        var soma = 0
+        for(var j = 1; j < notasAlunosMatriz[i].length; j++){
+            var notasAlunos = notasAlunosMatriz[i][j]
+            soma = soma + notasAlunos
+            var media = soma/(notasAlunosMatriz[j].length -1)
+        }
+        var nomeAluno = notasAlunosMatriz[i][0]
+        nomeMediaAlunos.push([nomeAluno, media])
+        mediasAlunos.push([media])
+    }
+    mediasAlunos.sort((a, b) => a - b);
+    for(var k =0; k < nomeMediaAlunos.length; k++){
+        var maiorMediaReprovado = Math.trunc(mediasAlunos.length * 10/100) - 1;
+        var mediaReprovacao = mediasAlunos[maiorMediaReprovado]
+        var reprovado = parseFloat(mediaReprovacao)
+        var menorMediaAprovado = Math.trunc(mediasAlunos.length * 70/100) - 1;
+        var mediaAprovacao = mediasAlunos[menorMediaAprovado]
+        var aprovado = parseFloat(mediaAprovacao)
+        var medias = nomeMediaAlunos[k][1]
+        if(medias <= mediaReprovacao){
+            situacaoAluno = "Reprovado"
+        }
+        if(medias > mediaAprovacao){
+            situacaoAluno = "Aprovado"
+        }
+        if((medias > mediaReprovacao) && (medias <= mediaAprovacao) ){
+            situacaoAluno = "Recuperação"
+        }
+        nomeMediaAlunos[k].push(situacaoAluno)
+    }
+    mediaRecuperacao = ((aprovado + reprovado) / 2).toFixed(1)
+    console.log("Situação dos alunos: \n")
+    console.log(nomeMediaAlunos)
+    console.log("Menor nota para aprovação: " + mediaAprovacao)
+    console.log("Maior nota para reprovação: " + mediaReprovacao)
+    console.log("Média necessária para aprovação na recuperação: " + mediaRecuperacao)    
+}
